@@ -33,7 +33,7 @@ function iniciarTest() {
     mensaje = "\n\nAunque Mercurio se encuentra más cerca, Venus tiene una atmósfera compuesta por un 96% dióxido de carbono, este gas en exceso atrapa el calor que viene del sol produciendo que el planeta tenga 3 veces la temperatura de Mercurio.";
     puntaje += preguntar(pregunta, respuestaCorrecta, mensaje);
 
-    // Mensaje si no se alcanza el puntaje
+    // Mensaje por si no se alcanza el puntaje min para el premio
     while (puntaje < 10) {
         alert("Aun no has conseguido los 10 puntos para el premio, intenta de nuevo!");
         puntaje = 0;
@@ -43,6 +43,7 @@ function iniciarTest() {
     // Premio
     while (puntaje >= 10) {
         alert("**************************** Felicitaciones ******************************\n\n   Has ganado un viaje al espacio en Estación Espacial Internacional\n\n*************************************************************************");
+        puntaje = 0;
         break;
     }
 
