@@ -42,7 +42,7 @@ function iniciarTest() {
 
     // Premio
     while (puntaje >= 10) {
-        alert("**************************** Felicitaciones ******************************\n\n   Has ganado un viaje al espacio en Estación Espacial Internacional\n\n*************************************************************************");
+        alert("¡Felicitaciones! \n\n¡Has ganado un viaje al espacio en Estación Espacial Internacional!");
         puntaje = 0;
         break;
     }
